@@ -1,0 +1,60 @@
+2024-11-29 08:56:11,449 - INFO - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2024-11-29 08:56:11,466 - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2024-11-29 08:56:11,772 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2024-11-29 08:56:13,636 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2024-11-29 08:56:20,047 - ERROR - Error occurred: Error comparing faces: compute_face_descriptor(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.face_recognition_model_v1, img: numpy.ndarray[(rows,cols,3),numpy.uint8], face: _dlib_pybind11.full_object_detection, num_jitters: int = 0, padding: float = 0.25) -> _dlib_pybind11.vector
+    2. (self: _dlib_pybind11.face_recognition_model_v1, img: numpy.ndarray[(rows,cols,3),numpy.uint8], num_jitters: int = 0) -> _dlib_pybind11.vector
+    3. (self: _dlib_pybind11.face_recognition_model_v1, img: numpy.ndarray[(rows,cols,3),numpy.uint8], faces: _dlib_pybind11.full_object_detections, num_jitters: int = 0, padding: float = 0.25) -> _dlib_pybind11.vectors
+    4. (self: _dlib_pybind11.face_recognition_model_v1, batch_img: list[numpy.ndarray[(rows,cols,3),numpy.uint8]], batch_faces: list[_dlib_pybind11.full_object_detections], num_jitters: int = 0, padding: float = 0.25) -> _dlib_pybind11.vectorss
+    5. (self: _dlib_pybind11.face_recognition_model_v1, batch_img: list[numpy.ndarray[(rows,cols,3),numpy.uint8]], num_jitters: int = 0) -> _dlib_pybind11.vectors
+
+Invoked with: <_dlib_pybind11.face_recognition_model_v1 object at 0x15b85a870>, array([[[ 67,  93, 159],
+        [ 65,  91, 157],
+        [ 58,  84, 151],
+        ...,
+        [ 53,  70, 127],
+        [ 57,  74, 131],
+        [ 60,  76, 135]],
+
+       [[ 66,  92, 158],
+        [ 64,  92, 157],
+        [ 56,  83, 150],
+        ...,
+        [ 51,  66, 122],
+        [ 51,  66, 122],
+        [ 53,  67, 125]],
+
+       [[ 64,  92, 157],
+        [ 63,  91, 156],
+        [ 56,  83, 150],
+        ...,
+        [ 42,  58, 111],
+        [ 42,  57, 113],
+        [ 45,  60, 116]],
+
+       ...,
+
+       [[174, 174, 174],
+        [166, 166, 166],
+        [160, 159, 161],
+        ...,
+        [ 54,  63, 100],
+        [ 57,  65,  95],
+        [ 58,  65,  92]],
+
+       [[162, 160, 160],
+        [156, 154, 154],
+        [156, 153, 155],
+        ...,
+        [ 58,  67, 100],
+        [ 61,  67,  96],
+        [ 59,  66,  91]],
+
+       [[154, 152, 152],
+        [155, 153, 153],
+        [161, 158, 160],
+        ...,
+        [ 64,  72, 102],
+        [ 63,  70,  97],
+        [ 62,  67,  92]]], dtype=uint8), <_dlib_pybind11.full_object_detection object at 0x1635584b0>, 1
